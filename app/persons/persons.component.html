@@ -1,0 +1,11 @@
+<ul class="list-group col-md-4">
+   
+     <li class="list-group-item" *ngFor="let person of Persons">
+        <a [routerLink]="['/profile', person.name, person.age]"
+           [queryParams]="{editable:'true', save:person.name}" >
+           {{person.name}} - {{person.age}}
+        </a>
+    </li>
+  
+<ul>
+    

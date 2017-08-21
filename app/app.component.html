@@ -1,0 +1,21 @@
+<div class="container" style="margin-top:50px;">
+  <ul class="nav nav-tabs" >
+    <li role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" ><a routerLink="/">Home</a></li>
+    <li role="presentation" routerLinkActive="active"><a routerLink="/profile" >Profile</a></li>
+    <li role="presentation" routerLinkActive="active"><a routerLink="/messages">Messages</a></li>
+</ul> 
+
+
+
+<!-- <div class="container" style="margin-top:50px;" routerLinkActive="active">
+  <ul class="nav nav-tabs" >
+    <li role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/">Home</a></li>
+    <li role="presentation" routerLinkActive="active"><a routerLink="/profile" >Profile</a></li>
+    <li role="presentation" routerLinkActive="active"><a [routerLink]="'/messages'">Messages</a></li>
+  </ul> -->
+
+  <div class="tab-content">
+
+   <router-outlet></router-outlet> 
+  
+</div>
